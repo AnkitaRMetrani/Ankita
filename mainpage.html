@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title> Main Page</title>
+        <link rel="icon" type="image/x-icon" href="world-wide-web.png">
+        <link rel="stylesheet" href="mainstyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <script>
+            function change_Color(){
+                var x = document.getElementById("colour").value;
+                document.getElementById("aside").style.backgroundColor= x;
+
+                var y = document.getElementById("colour").value;
+                document.getElementsByClassName("footer").style.backgroundColor=y;
+
+            }
+            function range(){
+                var rng = document.getElementById("ratings").value;
+                document.getElementById("rtng").innerHTML=rng;
+
+            }
+        </script>
+
+
+        <div class="new-form-cont">
+                <header class="header">
+                    <img src="OIP.jfif" alt="website logo" width="75px" height="75px"/>
+                
+                    <menu>
+                        <button type="submit">
+                            <input type="search" id="search" name="search" name="search">
+                            <span class="material-icons">search</span>
+                        </button>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        
+                    </menu>
+                </header>
+
+            <span>
+                <h1>Videos for fun !!</h1>
+                
+                
+                <video Height="400" width="400" controls >
+                    <source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                  </video>
+                  <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" Height="400" width="400" frameborder="0"></iframe>
+            
+                <aside id="aside">
+                <h3>Blogs</h3>
+                <article>
+                    
+                    <img src="th.jfif" alt="blog image" width="200px" height="200px">
+                    
+                        <details>
+                            <summary>What is a Blog?...</summary> 
+                            <p>
+                                A blog (a truncation of "weblog")[1] is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts). 
+                                Posts are typically displayed in reverse chronological order, so that the most recent post appears first, at the top of the web page. Until 2009, blogs were usually the work of a single individual,
+                                occasionally of a small group, and often covered a single subject or topic.
+                                In the 2010s, "multi-author blogs" (MABs) emerged, featuring the writing of multiple authors and sometimes professionally edited.
+                                MABs from newspapers, other media outlets, universities, think tanks, 
+                                advocacy groups, and similar institutions account for an increasing quantity of blog traffic. 
+                                The rise of Twitter and other "microblogging" systems helps integrate MABs and single-author blogs 
+                                into the news media. Blog can also be used as a verb, meaning to maintain or add content to a blog.The emergence and growth of blogs in the late 1990s coincided with the advent of web publishing tools 
+                                that facilitated the posting of content by non-technical users who did not have much experience with HTML or computer programming. 
+                                Previously, a knowledge of such technologies as HTML and File Transfer Protocol had been required to publish content on the Web, 
+                                and early Web users therefore tended to be hackers and computer enthusiasts. 
+                                In the 2010s, the majority are interactive Web 2.0 websites, allowing visitors to leave online comments, 
+                                and it is this interactivity that distinguishes them from other static websites.[2] In that sense, blogging can be seen as a form of social networking service. 
+                                Indeed, bloggers not only produce content to post on their blogs but also often build social relations with their readers and other bloggers. 
+                                However, there are high-readership blogs which do not allow comments.
+                                </p>
+                        </details>
+                    
+                </article>
+                <hr>
+
+                <article>
+                    <img alt="Article" src="articles-lead-image-082418-min.jpg" width="200px" height="200px"> 
+                    <details>
+                        <summary>What is an Article?...</summary>
+                        <p>
+                            An article is a short monosyllabic word that is used to define if the noun is specific or not. 
+                            Articles are normally used before nouns and since they are used to speak about the noun, they can be considered as adjectives.
+                        </p>
+                    </details>
+                </article>
+
+                </aside>
+            </span>
+
+            <section>
+                <form class="new--form">
+                    <h3>Subscription Form</h3>
+
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="Smin Ron Thom" required autocomplete="off"><br>
+                    <label >Email:</label>
+                    <input type="email" placeholder="example@gmail.com" required autocomplete="off"><br>
+                    <label>Favourite Color:</label>
+                    <input type="color" value="color" id="colour" oninput="change_Color()"><br>
+                    <label>Select week:</label>
+                    <input type="week" name="week" id="week"><br>
+                    <label for="ratings">Rate Us:</label>
+                    <input type="range" id="ratings" name="ratings" min="0" max="5" oninput="range()">
+                    <p id="rtng"></p><br>
+                    <label for="cars">Favroute Car:</label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                      </select><br>
+                    <button type="submit">submit</button><br>
+                    <progress id="progress" value="75" max="100" >75%</progress><br>
+
+
+                    
+                    
+                    
+                </form>
+            </section>
+            
+            <footer value="color" class="footer" oninput="change_Color()">
+                <i id="info" class="material-icons">info</i>
+
+                <small > Footer section of a website contains sitemaps, copyright information, back to top links, authorship information, etc.</small> 
+            </footer>
+
+        </div>
+        
+    </body>
+</html>

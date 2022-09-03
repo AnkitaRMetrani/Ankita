@@ -1,0 +1,123 @@
+*{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin:0}
+.myslides{display: none;}
+img {vertical-align: middle; height: 70vh;}
+
+.container{
+    background-image: linear-gradient(to right,rgb(142, 1rgb(78, 187, 206)177),rgb(105, 196, 219));
+}
+
+#navig{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(104, 198, 241);
+    display: flex;
+    justify-items: center;
+    box-shadow: 0 0 15px 0 rgb(167, 199, 209), 0 0 20px 0 rgb(162, 162, 184) ;
+   
+}
+#logo-image{
+    display: inline-flex;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 3rem;
+    width: 7rem;
+    height: auto;
+    margin-right: auto;
+}
+
+.navi{
+    align-items: center;
+    margin-right: 3.5rem;
+
+}
+.navi > a{
+    text-decoration: none;
+    color: rgb(20, 23, 43);
+    background-color: rgb(104, 198, 241);
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    padding-top: 1.4rem;
+    padding-bottom:2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.navi > a:hover{
+    background-color: rgb(219, 219, 212);
+    color: rgb(61, 162, 221);
+}
+
+.carousel{
+    height: 80vh;
+    background-color:  rgb(219, 219, 212);
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.prev, .next {
+    margin-top: -22px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.text {
+    color: #1b2033;
+    font-size: 15px;
+    padding: -12px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}

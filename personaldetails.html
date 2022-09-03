@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="world-wide-web.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+        <title>Register</title>
+    </head>
+    <body>
+        <div class="form--personal">
+            <nav class="nav">
+                <a class="dtl" href="personaldetails.html">PERSONAL DETAILS</a>
+                <a class="dtl" href="professional.html">Professional Details</a>
+
+            </nav>
+            <form action=""  method="get" class="personal--details">
+                <div class="full--name">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="First-Name Last-Name" class="name" required/>
+                </div>
+                <div class="DOB">
+                    <label>DOB:</label>
+                    <input type="date"  class="dob" required/>
+                </div>
+                <div class="gender">
+                    <label class="gender--lable">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="html">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label><br>
+                </div>
+                <div class="vid">
+                    <label>Virtual ID:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="dob" required/>
+                </div>
+                <input  type="button" class="submit-btn" value="submit">  </input>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+.cards{
+    background-color: rgb(163, 163, 163);
+    margin-top:1%;
+}
+
+.card-img-top{
+    padding-top: 5%;
+    height: 400px;
+}

@@ -1,0 +1,162 @@
+body{
+    background-image: url(../Carousel/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.login--div{
+    background-color: rgba(247, 247, 247, 0.61);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-style: groove;
+    border-radius: 5px;
+    border-width: 0px;
+    max-width: max-content;
+    font-size: larger;
+
+    padding: 4rem;
+    margin: auto;
+    margin-top: 5% ;
+    vertical-align: middle;
+    color: rgb(19, 83, 165);
+}
+#acc-circle{
+    font-size: 13rem;
+    align-self: center;
+}
+.login{
+    text-align: center;
+    
+}
+
+.login--email{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-style:none none none solid;
+    border-radius: 5px;
+    border-width: 2px;
+    
+    padding: 0.2rem ;
+    margin-bottom: 3%;
+    align-items: center;
+
+}
+
+.login--pswd{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-style: none none none solid;
+    border-radius: 5px;
+    border-width: 2px;
+    
+    padding: 0.2rem ;
+    margin-bottom: 5%;
+    align-items: center;
+
+}
+.material-icons{
+    font-size: x-large;
+    margin-right: 5px;
+}
+
+.forgot{    
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 14px ;
+    text-decoration: none;
+}
+
+.email--input{
+    border-style: none;    
+    padding: 2%;
+
+
+}
+.pswd{
+    border-style: none;   
+    box-sizing: border-box;
+    padding: 2%;
+
+}
+
+
+/*.btn--div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: ;
+    
+    background-color: rgb(19, 83, 165);
+    color: rgb(255, 255, 255);
+    
+}*/
+
+.btn{
+    display: block;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+    padding: 0.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-right: auto;
+    background-color: rgb(19, 83, 165);
+    color: white;
+    border: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 0px;
+    
+}
+.btn:hover{
+    background-image: linear-gradient(to right, rgba(62, 127, 211, 0.959),rgba(53, 153, 230, 0.925));
+}
+
+p{
+    align-self: center;
+}
+
+.reg{
+text-align: center;
+color: rgb(19, 83, 165);
+}
+.lgn{
+    text-decoration: none;
+    color: white;
+}
+
+/*css for presonal details*/
+
+.form--personal{
+    background-color: rgba(247, 247, 247, 0.61);
+    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-style: groove;
+    border-radius: 5px;
+    border-width: 0px;
+    max-width: max-content;
+    font-size: larger;
+
+    padding: 3rem;
+    margin: auto;
+    margin-top: 5% ;
+    vertical-align: middle;
+    color: rgb(19, 83, 165);
+
+}
+
+.nav{
+    background-color: rgb(19, 83, 165);
+    
+}
+.dtl{
+    text-decoration: none;
+    color: white;
+    margin-right: auto ;
+}

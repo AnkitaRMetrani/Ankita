@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="world-wide-web.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+        <title>Register</title>
+    </head>
+    <body>
+        <div class="form--personal">
+            <nav class="nav">
+                <a class="dtl" href="personaldetails.html">Personal Details</a>
+                <a class="dtl" href="professional.html">PROFESSIONAL DETAILS</a>
+
+            </nav>
+            <form class="professional--details" method="get">
+                <h4 class="heading">Education</h4>
+                <div class="edu">
+                    <label class="lable">Highest Degree:</label>
+                    <input list="degree">
+                    <datalist id="degree">
+                        <option value="MBA">
+                        <option value="BE/B-Tech">
+                        <option value="ME/M-Tech">
+                        <option value="HSC">
+                        <option value="SSC">
+                    </datalist><br>
+
+                    <label class="lable">Specialization:</label>
+                    <input list="specialization">
+                    <datalist id="specialization">
+                        <option value="Software Development">
+                        <option value="Infrastructure Engineer">
+                        <option value="UI/UX Designer">
+                        <option value="Finance">
+                        <option value="Database Engineer">
+                    </datalist>
+
+                    <div class="skills">
+                        <label class="check-skills">Skills:</label><br>
+                        <input type="checkbox" id="html" name="html" value="html">
+                        <label for="html"> HTML</label><br>
+                        <input type="checkbox" id="css" name="css" value="css">
+                        <label for="css"> CSS </label><br>
+                        <input type="checkbox" id="js" name="js" value="js">
+                        <label for="js"> JAVASCRIPT</label><br>
+                        <input type="checkbox" id="react" name="react" value="react">
+                        <label for="react"> REACT</label>
+                    </div>
+
+                    <div class="lang">
+                        <label class="languages">Language Proficiency:</label><br>
+                        <label id="eng" class="English">English</label><br>
+                        <input type="radio" id="okay" name="lang" value="Okay" >
+                        <label for="okay">Okay</label>
+                        <input type="radio" id="good" name="lang" value="Good" >
+                        <label for="good">Good</label>
+                        <input type="radio" id="excellent" name="lang" value="Excellent" >
+                        <label for="excellent">Excellent</label>
+                        
+
+                        
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn"> Submit </button>
+            </form>
+        </div>
+    </body>
+</html>

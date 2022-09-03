@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="world-wide-web.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>User Login</title>
+    </head>
+    <body>
+        
+            <nav class="nav">
+                <a class="dtl" href="#">PERSONAL DETAILS</a>
+                <a class="dtl" href="#prof">PROFESSIONAL DETAILS</a>
+
+            </nav>
+            <div class="container--md">
+            <form action=""  method="get" class="personal--details">
+                <div class="container-md ">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="First-Name Last-Name" class="form-control" required/>
+                </div>
+                <div class="container">
+                    <label>DOB:</label>
+                    <input type="date"  class="dob" required/>
+                </div>
+                <div class="container-fluid">
+                    <label class="gender--lable">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="html">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label><br>
+                </div>
+                <div class="vid">
+                    <label>Virtual ID:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="dob" required/>
+                </div>
+                <input  type="button" class="submit-btn" value="submit">  </input>
+            </form>
+        </div>
+        <div id="prof" class="prof--detl">
+            <form  class="professional--details" method="get">
+                <h4 class="heading">Education</h4>
+                <div class="edu">
+                    <label class="lable">Highest Degree:</label>
+                    <input list="degree">
+                    <datalist id="degree">
+                        <option value="MBA">
+                        <option value="BE/B-Tech">
+                        <option value="ME/M-Tech">
+                        <option value="HSC">
+                        <option value="SSC">
+                    </datalist><br>
+
+                    <label class="lable">Specialization:</label>
+                    <input list="specialization">
+                    <datalist id="specialization">
+                        <option value="Software Development">
+                        <option value="Infrastructure Engineer">
+                        <option value="UI/UX Designer">
+                        <option value="Finance">
+                        <option value="Database Engineer">
+                    </datalist>
+
+                    <div class="skills">
+                        <label class="check-skills">Skills:</label><br>
+                        <input type="checkbox" id="html" name="html" value="html">
+                        <label for="html"> HTML</label><br>
+                        <input type="checkbox" id="css" name="css" value="css">
+                        <label for="css"> CSS </label><br>
+                        <input type="checkbox" id="js" name="js" value="js">
+                        <label for="js"> JAVASCRIPT</label><br>
+                        <input type="checkbox" id="react" name="react" value="react">
+                        <label for="react"> REACT</label>
+                    </div>
+
+                    <div class="lang">
+                        <label class="languages">Language Proficiency:</label><br>
+                        <label id="eng" class="English">English</label><br>
+                        <input type="radio" id="okay" name="lang" value="Okay" >
+                        <label for="okay">Okay</label>
+                        <input type="radio" id="good" name="lang" value="Good" >
+                        <label for="good">Good</label>
+                        <input type="radio" id="excellent" name="lang" value="Excellent" >
+                        <label for="excellent">Excellent</label>
+                        
+
+                        
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn"> Submit </button>
+            </form>
+        </div>
+    </body>
+</html>

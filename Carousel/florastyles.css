@@ -1,0 +1,65 @@
+/*universal selector*/
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*class selector*/
+.menu--div{
+    box-sizing: border-box;
+    display: flex;
+    min-width: auto;
+    align-items: center;
+    background-image: linear-gradient(to right,rgba(182, 220, 235, 0.842),rgb(192, 192, 243));
+}
+
+.menu >a {
+    text-decoration: none;
+    font-size: large;
+    color: blue;
+    margin-right: auto;
+}
+
+/* HTML selectors*/
+table, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: large;
+    
+  }
+
+
+/*id selectors*/
+#colspan1, #colspan2, #colspan3 {
+    font-weight: bold;
+}
+#caption{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.span {
+    font-style: italic;
+    font-size: large;
+    font-weight: bolder;
+}
+#ul--div{
+    background-color: beige;
+    margin: 0.25rem;
+    padding:0.15rem ;
+}
+
+ul{
+    text-decoration: none;
+    font-size: large;
+    font-style: italic;
+    color: blue;
+    margin-right: auto;
+
+}
+
+li a:hover{
+    color: yellow;
+}
+
+
